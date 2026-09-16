@@ -1,0 +1,99 @@
+# Évaluation Jour 1 — Imprimante de carte d'embarquement
+
+**Durée :** 30 minutes
+**Contenu évalué :** console.log(), littéraux, concaténation de chaînes, opérateurs de comparaison, typeof
+
+---
+
+## Contexte
+
+Vous développez la logique d'affichage d'une borne d'enregistrement dans un aéroport.
+
+La borne affiche des informations dans la console, étape par étape, au fur et à mesure de l'enregistrement d'un passager.
+
+Complétez ce script un `console.log()` à la fois, en respectant le comportement attendu décrit pour chaque étape. N'utilisez ni variables, ni conditions, ni boucles — uniquement ce qui a été vu au Jour 1.
+
+---
+
+### Étape 1 — Bannière d'accueil
+
+**Comportement attendu :** Afficher une bannière d'accueil pour la borne, exactement :
+`===== SkyLine Airlines - Check-In =====`
+
+**Résultat attendu :**
+```
+===== SkyLine Airlines - Check-In =====
+```
+
+---
+
+### Étape 2 — Ligne passager
+
+**Comportement attendu :** Afficher une seule ligne indiquant le nom du passager et le numéro de vol, dans le format exact ci-dessous.
+
+**Résultat attendu :**
+```
+Passenger: Karim Benali | Flight: SL204
+```
+
+---
+
+### Étape 3 — Piège de type sur le numéro de siège
+
+**Comportement attendu :** Afficher le résultat de la concaténation du texte `"Seat: "` avec le nombre `14`.
+
+Puis, sur la ligne suivante, afficher le résultat de la concaténation du texte `"Seat: "` avec le nombre `14` suivi de la lettre `"A"` écrite sous forme de chaîne de caractères.
+
+**Résultat attendu :**
+```
+Seat: 14
+Seat: 14A
+```
+
+---
+
+### Étape 4 — Comparaison de l'heure d'embarquement
+
+**Comportement attendu :** L'embarquement a lieu dans 45 minutes, et la limite d'enregistrement est de 60 minutes.
+
+Afficher le résultat de la comparaison indiquant si l'heure d'embarquement (`45`) est inférieure à la limite (`60`) à l'aide d'un opérateur de comparaison — le résultat affiché doit être une valeur booléenne, pas du texte.
+
+**Résultat attendu :**
+```
+true
+```
+
+---
+
+### Étape 5 — Vérification de l'embarquement prioritaire
+
+**Comportement attendu :** Afficher une seule ligne montrant le libellé `"Priority boarding:"` suivi du résultat booléen de la comparaison entre les points de fidélité du passager (`1200`) et le seuil de priorité (`1000`), à l'aide de l'opérateur supérieur ou égal.
+
+**Résultat attendu :**
+```
+Priority boarding: true
+```
+
+---
+
+### Étape 6 — Vérification du type du prix du billet
+
+**Comportement attendu :** Afficher le résultat de `typeof` appliqué à la valeur du prix du billet `349.99`.
+
+**Résultat attendu :**
+```
+number
+```
+
+---
+
+### Étape 7 — Bannière de clôture
+
+**Comportement attendu :** Afficher une ligne de clôture combinant le libellé `"Gate: "` avec le nombre `12` et le libellé `" | Status: "` avec le texte `"Boarding"`, à l'aide de la concaténation, en un seul appel à `console.log()`.
+
+**Résultat attendu :**
+```
+Gate: 12 | Status: Boarding
+```
+
+---
