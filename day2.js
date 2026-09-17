@@ -31,3 +31,8 @@ switch (day){
 if (a += 3 >= 6 || a === 8){
     console.log("vrai");
 }
+
+let example = "Hello";
+example = 42;
+
+console.log(example);

@@ -1,0 +1,96 @@
+# Évaluation Jour 2 — Guichet de cinéma
+
+**Durée :** 30 minutes
+**Contenu évalué :** variables (let/const), opérateurs arithmétiques, opérateurs de comparaison, opérateurs logiques, if/else, switch
+
+---
+
+## Contexte
+
+Vous développez la logique de tarification du guichet d'un cinéma.
+
+Le guichet calcule la catégorie tarifaire d'un client, vérifie l'éligibilité à une réduction de groupe, l'applique, puis affiche un résumé final — incluant un supplément selon le type de siège.
+
+Complétez ce script étape par étape, en respectant le comportement attendu décrit pour chaque étape. N'utilisez que ce qui a été vu au Jour 1 et au Jour 2 — ni boucles, ni fonctions, ni tableaux.
+
+---
+
+### Étape 1 — Déclarer et afficher les informations de base
+
+**Comportement attendu :** Déclarez trois variables :
+- `customerAge` (une valeur qui ne change jamais) fixée à `8`
+- `basePrice` (une valeur qui ne change jamais) fixée à `12`
+- `groupSize` (une valeur qui peut changer plus tard) fixée à `4`
+
+Affichez chacune sur sa propre ligne, dans le format exact ci-dessous.
+
+**Résultat attendu :**
+```
+Customer age: 8
+Base ticket price: 12
+Group size: 4
+```
+
+---
+
+### Étape 2 — Déterminer la catégorie d'âge
+
+**Comportement attendu :** À partir de `customerAge`, affichez la catégorie du client :
+- si l'âge est inférieur à 12, afficher `Category: Child`
+- sinon, si l'âge est inférieur à 65, afficher `Category: Adult`
+- sinon, afficher `Category: Senior`
+
+**Résultat attendu :**
+```
+Category: Child
+```
+
+---
+
+### Étape 3 — Vérifier l'éligibilité à la réduction de groupe
+
+**Comportement attendu :** Un groupe est éligible à une réduction si `groupSize` est supérieur ou égal à 4 **ET** `basePrice` est supérieur ou égal à 10. Affichez le libellé `"Group discount eligible:"` suivi du résultat booléen de cette vérification.
+
+**Résultat attendu :**
+```
+Group discount eligible: true
+```
+
+---
+
+### Étape 4 — Calculer le total
+
+**Comportement attendu :** Calculez le sous-total en multipliant `basePrice` par `groupSize`. Si le groupe est éligible à la réduction (Étape 3), le total est le sous-total moins 10 % du sous-total. Sinon, le total est simplement le sous-total. Affichez le résultat avec le libellé `"Total: "`.
+
+**Résultat attendu :**
+```
+Total: 43.2
+```
+
+---
+
+### Étape 5 — Supplément selon le type de siège
+
+**Comportement attendu :** Déclarez une variable `seatType` fixée à `"VIP"`. À l'aide d'une instruction switch, affichez le message de supplément correspondant :
+- `"Standard"` → `No extra charge`
+- `"VIP"` → `Add $5 surcharge`
+- `"IMAX"` → `Add $8 surcharge`
+- tout autre cas → `Unknown seat type`
+
+**Résultat attendu :**
+```
+Add $5 surcharge
+```
+
+---
+
+### Étape 6 — Résumé final du billet
+
+**Comportement attendu :** Affichez une ligne de clôture combinant le libellé `"Final Total: $"` avec le total de l'Étape 4, suivi de `" | Seat: "` et du type de siège de l'Étape 5, à l'aide de la concaténation, en un seul appel à `console.log()`.
+
+**Résultat attendu :**
+```
+Final Total: $43.2 | Seat: VIP
+```
+
+---
