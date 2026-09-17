@@ -12,4 +12,4 @@ console.log("Priority boarding:" , 1200 >= 1000);
 //et 6
 console.log(typeof(349.99));
 //et 7
-console.log("Gate: " + 12 + "Status: Boarding");
+console.log("Gate: " + 12 + " Status: Boarding");
