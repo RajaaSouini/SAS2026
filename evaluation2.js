@@ -25,14 +25,9 @@ if (groupSize >= 4 && basePrice >= 10){
 }
 
 //et 4
-let sousTotal = basePrice * groupSize;
-let total = sousTotal;
-if (result){
-    total = (10*sousTotal)/100 ;
-    console.log("Total: " , total);
-}else{
-    console.log("Total: " , total);
-}
+
+let total = basePrice* groupSize;
+
 
 //et 5 
 let seatType = "VIP";
