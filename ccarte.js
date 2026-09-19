@@ -10,6 +10,18 @@ for (let i = 0; i <= 3; i++) {
     console.log(row);
 }
 */
+/*
+let n = 5; 
+
+for (let i = n; i >= 1; i--) {
+  let ligne = "";
+  for (let j = 1; j <= i; j++) {
+    ligne += "*";
+  }
+  console.log(ligne);
+} */
+
+
 for (let i = 0; i <= 3; i++) {
     let row = "";
     for (let j = 0; j <= 3; j++) {
